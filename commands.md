@@ -30,7 +30,6 @@ Bouncer+
 |!afkremoval | | toggles the afk check |
 |!autoskip | | skips songs automatically when they're done (use when the circles-bug happens) |
 |!bouncer+ | | disable bouncer+ |
-|~~!deletechat~~ | ~~@user~~ | ~~delete all the chats by a certain user~~ |
 |!lock | | lock the waitlist |
 |!lockdown | | lock down the room: only staff can chat |
 |!maxlength | X | specify the maximum length a song can be when timeguard is enabled |
@@ -103,6 +102,7 @@ User
 |!emoji | | a link to a list with emoji's |
 |!eta | | shows how long before you reach the booth |
 |!fb | | links to the room's Facebook page (if set in the settings) |
+|!twit | | links to the room's Twitter page (if set in the settings) |
 |!ghostbuster | @user | checks if user is ghosting |
 |!gif | (message) | returns gif (from giphy) related to the tag provided. Returns a random gif if no tags are provided. |
 |!help | | links to an image to help get people started on plug |

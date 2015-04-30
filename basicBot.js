@@ -861,6 +861,9 @@
         eventDjadvance: function (obj) {
             $("#woot").click(); // autowoot
 
+        eventDjadvance: function (obj) {
+            $("#grab").click();
+            
             var user = basicBot.userUtilities.lookupUser(obj.dj.id)
             for(var i = 0; i < basicBot.room.users.length; i++){
                 if(basicBot.room.users[i].id === user.id){
@@ -1522,6 +1525,18 @@
                     }
                 }
             },
+            autograbCommand: {
+                command: 'autograb',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(basicBot.chat.autograb);
+                    }
+                }
+            },
 
             autoskipCommand: {
                 command: 'autoskip',
@@ -1556,7 +1571,7 @@
                     }
                 }
             },
-
+            
             baCommand: {
                 command: 'ba',
                 rank: 'user',
